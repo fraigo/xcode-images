@@ -8,6 +8,7 @@ ls $IMAGEFOLDER
 echo " "
 echo "Current versions available to install:"
 echo "11.3"
+echo "12.0"
 echo "12.1"
 echo " "
 
@@ -18,6 +19,7 @@ read VERSION
 IMAGEFILE=""
 case "$VERSION" in
     ("11.3") IMAGEFILE="11.3.15E5178d.zip" ;;
+    ("12.0") IMAGEFILE="12.0.16A366.zip" ;;
     ("12.1") IMAGEFILE="12.1.16B5059d.zip" ;;
     (*) IMAGEFILE="" ;;
 esac
