@@ -3,9 +3,10 @@ Device Support Platforms for iOS / Xcode 10 9 / iOS 12.1 12.0 11.3
 
 Fixes problem "Could Not Locate Device Support Files" for newer iOS devices
 
-Run the script to download and install missing Xcode Developer Support Images 
+![](xcode-could-not-locate-device-support-files-11.3.png)
 
 
+Run the following script to automatically download and install missing Xcode Developer Support Images 
 
 # Usage
 
@@ -26,6 +27,7 @@ Current versions installed:
 
 Current versions available to install:
 11.3
+12.0
 12.1
 
 Which image to install? : 12.1
@@ -37,4 +39,11 @@ The image will be downloaded and then installed in
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
 ```
 
+Close all XCode windows if it's already running, and restart Xcode. 
+After the first attempt of running your device again, you will receive a notification like this:
+
+
+![](xcode-preparing-device-support-files.png)
+
+After preparing your phone for debugging, you will be able to run and debug your applications in your updated device.
 
