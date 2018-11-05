@@ -1,10 +1,12 @@
 #!/bin/sh
 
 echo "Current versions installed:"
-ls /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
+VERSIONS = $(ls /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/)
+echo $VERSIONS
 
 echo " "
 echo "Current versions available to install:"
+echo "11.3"
 echo "12.1"
 echo " "
 
@@ -13,6 +15,7 @@ read VERSION
 
 rm -f /tmp/image.zip
 case "$VERSION" in
+    ("11.3") curl -o /tmp/image.zip https://github.com/fraigo/xcode-images/raw/master/11.3.15E5178d.zip ;;
     ("12.1") curl -o /tmp/image.zip https://github.com/fraigo/xcode-images/raw/master/12.1.16B5059d.zip ;;
     (*) echo "Version not supported" ;;
 esac
