@@ -1,6 +1,11 @@
 # xcode-images
+Device Support Platforms for iOS / Xcode 10 9 / iOS 12.1 12.0 11.3 
 
-Download and install Xcode Developer Support Images for new devices.
+Fixes problem "Could Not Locate Device Support Files" for newer iOS devices
+
+Run the script to download and install missing Xcode Developer Support Images 
+
+
 
 # Usage
 
