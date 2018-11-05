@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 IMAGEFOLDER=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
 
@@ -33,8 +33,8 @@ rm -f /tmp/image.zip
 curl -o /tmp/image.zip https://raw.githubusercontent.com/fraigo/xcode-images/master/$IMAGEFILE
 
 echo "Checking $IMAGEFILE"
-if [ -e /tmp/image/zip ]; then
-  unzip -l /tmp/image/zip
+if [ -e /tmp/image.zip ]; then
+  unzip -l /tmp/image.zip
   echo "Unzipping $IMAGEFILE"
   cd $IMAGEFOLDER
   sudo unzip /tmp/image.zip
