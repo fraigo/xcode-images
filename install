@@ -25,7 +25,7 @@ esac
 
 if [ "$IMAGEFILE" == "" ]; then
     echo "No valid image version selected"
-    exit(1)
+    exit 
 fi
 
 echo "Downloading $IMAGEFILE ($VERSION)"
