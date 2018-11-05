@@ -1,5 +1,24 @@
 #!/bin/sh
-curl -o /tmp/image.zip https://github.com/fraigo/xcode-images/raw/master/12.1.16B5059d.zip
-cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
-sudo unzip /tmp/image.zip
+
+echo "Current versions installed:"
+ls /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
+
+echo " "
+echo "Current versions available to install:"
+echo "12.1"
+echo " "
+
+echo "Which version to install: "
+read VERSION
+
+rm -f /tmp/image.zip
+case "$VERSION" in
+    ("12.1") curl -o /tmp/image.zip https://github.com/fraigo/xcode-images/raw/master/12.1.16B5059d.zip ;;
+    (*) echo "Version not supported" ;;
+esac
+
+if [ -e /tmp/image/zip ]; then
+  cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
+  sudo unzip /tmp/image.zip
+fi
 
