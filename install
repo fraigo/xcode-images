@@ -3,8 +3,7 @@
 IMAGEFOLDER=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
 
 echo "Current versions installed:"
-VERSIONS=$(ls $IMAGEFOLDER)
-echo $VERSIONS
+ls $IMAGEFOLDER
 
 echo " "
 echo "Current versions available to install:"
@@ -40,6 +39,6 @@ if [ -e /tmp/image.zip ]; then
   sudo unzip /tmp/image.zip
 fi
 
-echo "Current versions installed:"
+echo "Versions installed in $IMAGEFOLDER"
 ls $IMAGEFOLDER
 
