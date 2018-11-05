@@ -1,0 +1,5 @@
+#!/bin/sh
+curl -o /tmp/image.zip https://github.com/fraigo/xcode-images/raw/master/12.1.16B5059d.zip
+cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
+sudo unzip /tmp/image.zip
+
