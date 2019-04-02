@@ -32,8 +32,8 @@ if [ "$IMAGEFILE" == "" ]; then
     echo "Do you want to create $VERSION one from an existing version [Type version, or empty to exit]:"
     read EXVERSION
     if [ ! "$EXVERSION" == "" ]; then
-      mkdir -p "$IMAGEFOLDER/$VERSION"
-      cp "$IMAGEFOLDER/$EXVERSION/*" "$IMAGEFOLDER/$VERSION/"
+      sudo mkdir -p "$IMAGEFOLDER$VERSION"
+      sudo cp "$IMAGEFOLDER$EXVERSION/*" "$IMAGEFOLDER$VERSION/"
     fi
     exit 
 fi
