@@ -25,6 +25,7 @@ case "$VERSION" in
 esac
 
 cd $IMAGEFOLDER
+pwd
 
 if [ "$IMAGEFILE" == "" ]; then
     echo "No valid image version selected."
