@@ -34,7 +34,8 @@ if [ "$IMAGEFILE" == "" ]; then
     read EXVERSION
     if [ ! "$EXVERSION" == "" ]; then
       sudo mkdir -p "$VERSION"
-      sudo cp "$EXVERSION/*" "$VERSION/"
+      sudo cp "$EXVERSION/DeveloperDiskImage.dmg" "$VERSION/"
+      sudo cp "$EXVERSION/DeveloperDiskImage.dmg.signature" "$VERSION/"
     fi
     exit 
 fi
