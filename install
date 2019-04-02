@@ -24,8 +24,17 @@ case "$VERSION" in
     (*) IMAGEFILE="" ;;
 esac
 
+cd $IMAGEFOLDER
+
 if [ "$IMAGEFILE" == "" ]; then
-    echo "No valid image version selected"
+    echo "No valid image version selected."
+    ls $IMAGEFOLDER
+    echo "Do you want to create $VERSION one from an existing version [Type version, or empty to exit]:"
+    read EXVERSION
+    if [ ! "$EXVERSION" == "" ]; then
+      mkdir -p "$IMAGEFOLDER/$VERSION"
+      cp "$IMAGEFOLDER/$EXVERSION/*" "$IMAGEFOLDER/$VERSION/"
+    fi
     exit 
 fi
 
