@@ -37,6 +37,7 @@ if [ "$IMAGEFILE" == "" ]; then
       sudo cp "$EXVERSION/DeveloperDiskImage.dmg" "$VERSION/"
       sudo cp "$EXVERSION/DeveloperDiskImage.dmg.signature" "$VERSION/"
     fi
+    echo "Restart xCode to update the configuration"
     exit 
 fi
 
@@ -55,3 +56,4 @@ fi
 echo "Versions installed in $IMAGEFOLDER"
 ls $IMAGEFOLDER
 
+echo "Restart xCode to update the configuration"
