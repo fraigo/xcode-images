@@ -21,6 +21,7 @@ case "$VERSION" in
     ("11.3") IMAGEFILE="11.3.15E5178d.zip" ;;
     ("12.0") IMAGEFILE="12.0.16A366.zip" ;;
     ("12.1") IMAGEFILE="12.1.16B5059d.zip" ;;
+    ("13.5") IMAGEFILE="13.5.17F61.zip" ;;
     (*) IMAGEFILE="" ;;
 esac
 
