@@ -10,6 +10,9 @@ echo "Current versions available to install:"
 echo "11.3"
 echo "12.0"
 echo "12.1"
+echo "13.5"
+echo "14.1"
+echo "14.6"
 echo " "
 
 echo "Which version to install: "
@@ -22,6 +25,8 @@ case "$VERSION" in
     ("12.0") IMAGEFILE="12.0.16A366.zip" ;;
     ("12.1") IMAGEFILE="12.1.16B5059d.zip" ;;
     ("13.5") IMAGEFILE="13.5.17F61.zip" ;;
+    ("14.1") IMAGEFILE="14.1.zip" ;;
+    ("14.6") IMAGEFILE="14.6.zip" ;;
     (*) IMAGEFILE="" ;;
 esac
 
