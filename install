@@ -13,6 +13,9 @@ echo "12.1"
 echo "13.5"
 echo "14.1"
 echo "14.6"
+echo "14.7"
+echo "14.7.1"
+echo "14.8"
 echo " "
 
 echo "Which version to install: "
@@ -27,6 +30,9 @@ case "$VERSION" in
     ("13.5") IMAGEFILE="13.5.17F61.zip" ;;
     ("14.1") IMAGEFILE="14.1.zip" ;;
     ("14.6") IMAGEFILE="14.6.zip" ;;
+    ("14.7") IMAGEFILE="14.7.zip" ;;
+    ("14.7.1") IMAGEFILE="14.7.1.zip" ;;
+    ("14.8") IMAGEFILE="14.8.zip" ;;
     (*) IMAGEFILE="" ;;
 esac
 
@@ -63,3 +69,5 @@ echo "Versions installed in $IMAGEFOLDER"
 ls $IMAGEFOLDER
 
 echo "Restart xCode to update the configuration"
+
+# Additional images can be found at https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases
