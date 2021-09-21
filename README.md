@@ -1,5 +1,5 @@
 # xcode-images
-Device Support Platforms for iOS / Xcode 10 9 / iOS 12.1 12.0 11.3 
+Xcode Device Support Images for new iOS Versions. Current support up to iOS 14.8
 
 Fixes problem "Could Not Locate Device Support Files" for newer iOS devices
 
@@ -29,8 +29,14 @@ Current versions available to install:
 11.3
 12.0
 12.1
+13.5
+14.1
+14.6
+14.7
+14.7.1
+14.8
 
-Which image to install? : 12.1
+Which image to install? : 14.8
 ```
 
 The image will be downloaded and then installed in 
